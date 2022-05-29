@@ -2,6 +2,16 @@ package sequential.max
 
 import java.util.Scanner
 
+class Max {
+
+    fun max(a: Int, b: Int, c: Int): Int {
+        var max = a
+        if (b > max) max = b
+        if (c > max) max = c
+        return max
+    }
+}
+
 fun main() {
 
     val scanner = Scanner(System.`in`)
@@ -17,11 +27,9 @@ fun main() {
     println("c 값:")
     val c = scanner.nextInt()
 
-    var max = a
+    val max = Max()
 
-    if (b > max) max = b
+    var maxNumber = max.max(a, b, c)
 
-    if (c > max) max = c
-
-    println("최대 값은?:${max}")
+    println("최대 값은?:${maxNumber}")
 }
