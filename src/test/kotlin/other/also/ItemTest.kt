@@ -60,11 +60,13 @@ internal class ItemTest {
                 setName(mockName)
             }
 
-        with(item) {
+        val entityName = with(item) {
             // 블록 안에서 this 로 참조를 하기 때문에
             // 바로 변수를 참조안하게 된다.
-            Assertions.assertEquals(mockName, getName())
+            getName()
         }
+
+        Assertions.assertEquals(mockName, entityName)
 
     }
 
