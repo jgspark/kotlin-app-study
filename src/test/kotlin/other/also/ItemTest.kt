@@ -14,7 +14,7 @@ internal class ItemTest {
         // 명시적으로 객체에게 바로 파라미터 데이터 전달
         // also 에서 it은 this 와 유사하며 선호된 객체를 참조하게 된다.
         // 블록 안에서 메소드를 실행을 하게 되면 자기참조가 리턴하게 된다.
-        var entity = Item().also { it ->
+        var entity = Item().also {
             it.setName(mockName)
         }
 
@@ -26,8 +26,10 @@ internal class ItemTest {
 
         val mockName = "이름데이터입니다."
 
-        val entity = Item(mockName).also { lt ->
-            println(lt)
+        // also 의 경우 it 을 넘겨 주기도 하나 return 되는 값의 경우
+        // 객체가 되게 된다.
+        val entity = Item(mockName).also {
+            it.getName()
         }
 
         Assertions.assertEquals(mockName, entity.getName())
