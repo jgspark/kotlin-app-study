@@ -39,4 +39,19 @@ internal class ComponentTest {
         Assertions.assertEquals(param2Str, component.getParam2())
         Assertions.assertNull(component.getParam3())
     }
+
+    @Test
+    fun `Other Builder Test`() {
+        val param2 = "test"
+
+        val param3 = "test1"
+
+        val value = Component.Param2AndParam3Builder()
+            .param2(param2)
+            .param3(param3)
+            .build()
+
+        Assertions.assertEquals(value.getParam2(), param2)
+        Assertions.assertEquals(value.getParam3(), param3)
+    }
 }
