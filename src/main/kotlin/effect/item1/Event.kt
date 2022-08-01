@@ -19,3 +19,9 @@ val fullName: String?
 val fullName2: String? = name?.let {
     "$it $surname"
 }
+
+
+data class User constructor(
+    val name: String,
+    val surName: String
+)

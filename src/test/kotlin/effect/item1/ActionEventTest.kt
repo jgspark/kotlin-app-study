@@ -27,4 +27,18 @@ internal class ActionEventTest {
         }
     }
 
+    @Test
+    fun `data class test case`() {
+
+        val mockSurName = "Test1234"
+
+        var user = User("test1", "test2")
+
+        user = user.copy(
+            surName = mockSurName
+        )
+
+        assertEquals(mockSurName, user.surName)
+    }
+
 }
