@@ -1,4 +1,4 @@
-package effect.item1
+package effective.item1
 
 interface EventItem {
     val active: Boolean

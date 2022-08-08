@@ -1,4 +1,4 @@
-package effect.item1
+package effective.item1
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
