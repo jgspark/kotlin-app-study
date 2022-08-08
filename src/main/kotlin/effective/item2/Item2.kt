@@ -92,6 +92,7 @@ fun updatedWeather2(degrees: Int) {
     }
 }
 
-fun <T> test(block: () -> T?): T? {
+fun <T> test(arg: String, block: () -> T?): T? {
+    println("this2")
     return block()
 }

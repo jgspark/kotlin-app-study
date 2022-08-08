@@ -16,10 +16,16 @@ internal class Item2KtTest {
 
         val mockValue = "test"
 
-        val value = test {
+        val value = test("test") {
+            println(">>>> this1")
             mockValue
         }
 
+        val value2: () -> String = {
+            "test"
+        }
+
         assertEquals(mockValue, value)
+        assertEquals(mockValue, value2())
     }
 }
