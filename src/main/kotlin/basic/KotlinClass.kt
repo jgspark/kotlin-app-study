@@ -1,6 +1,5 @@
 package basic
 
-
 class Person constructor(private val name: String) {
 
     fun getName() = this.name
@@ -23,3 +22,19 @@ class InitOrder {
 
     fun getOrder() = this.order
 }
+
+abstract class AbstractTestAction {
+    open fun action() = "test"
+}
+
+class TestAction : AbstractTestAction() {
+    override fun action(): String {
+        return super.action()
+    }
+}
+
+data class PersonItem(
+    val name: String,
+    val phoneNumber: String
+)
+
