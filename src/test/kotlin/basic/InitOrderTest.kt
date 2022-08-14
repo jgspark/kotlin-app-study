@@ -49,4 +49,26 @@ internal class KotlinClass {
         assertEquals(fakeName, personItem.component1())
         assertEquals(fakePhoneNumber, personItem.component2())
     }
+
+    @Test
+    fun `파괴 선언 for case`() {
+
+        val fakeName = "test1"
+        val fakePhoneNumber = "010-0000-0000"
+
+        val list = listOf(PersonItem(fakeName, fakePhoneNumber))
+
+        for ((name, phoneNumber) in list) {
+            assertEquals(fakeName, name)
+            assertEquals(fakePhoneNumber, phoneNumber)
+        }
+    }
+
+    @Test
+    fun `사용하지 않는 매개변수 케이스`() {
+        val fakeName = "test1"
+        val fakePhoneNumber = "010-0000-0000"
+        val (_, v2) = PersonItem(fakeName, fakePhoneNumber)
+        assertEquals(v2, fakePhoneNumber)
+    }
 }
