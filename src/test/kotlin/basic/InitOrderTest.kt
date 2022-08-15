@@ -71,4 +71,12 @@ internal class KotlinClass {
         val (_, v2) = PersonItem(fakeName, fakePhoneNumber)
         assertEquals(v2, fakePhoneNumber)
     }
+
+    @Test
+    fun `other 프로퍼티 toString() 사용 케이스`() {
+        val fakeName = "test1"
+        val fakePhoneNumber = "010-0000-0000"
+        val personItem = PersonItem(fakeName, fakePhoneNumber)
+        assertEquals("PersonItem(name=test1, phoneNumber=010-0000-0000)", personItem.toString())
+    }
 }

@@ -36,5 +36,15 @@ class TestAction : AbstractTestAction() {
 data class PersonItem(
     val name: String,
     val phoneNumber: String
-)
+){
 
+    val otherName : String = "test"
+}
+
+open class Shape {
+    open val number = 0
+}
+
+class Rectangle : Shape(){
+    override val number: Int get() = super.number
+}
