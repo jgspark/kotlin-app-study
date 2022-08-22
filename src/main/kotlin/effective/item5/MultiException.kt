@@ -12,6 +12,12 @@ fun checkToValByRuntimeException(isState: Boolean) {
     }
 }
 
+fun checkToLazyMessage(boolean: Boolean) {
+    check(boolean) {
+        "test custom message"
+    }
+}
+
 fun checkToAny(value: Any?) {
     checkNotNull(value)
 }

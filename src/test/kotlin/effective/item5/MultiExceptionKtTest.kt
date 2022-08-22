@@ -18,6 +18,13 @@ internal class MultiExceptionKtTest {
     }
 
     @Test
+    fun `상태 체크 lazyMessage`() {
+        assertThrows(IllegalStateException::class.java) {
+            checkToLazyMessage(false)
+        }
+    }
+
+    @Test
     fun `상태 체크 to custom exception throw by RuntimeException`() {
         assertThrows(RuntimeException::class.java) {
             checkToValByRuntimeException(false)
