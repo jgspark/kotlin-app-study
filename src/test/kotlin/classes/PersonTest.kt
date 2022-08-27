@@ -1,5 +1,6 @@
 package classes
 
+import basic.classes.Person
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

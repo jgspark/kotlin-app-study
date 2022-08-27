@@ -1,4 +1,4 @@
-package classes
+package basic.classes
 
 class Person constructor(var name: String) {
 
