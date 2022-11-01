@@ -1,0 +1,18 @@
+package coroutines.composing_suspending_functions
+
+import kotlinx.coroutines.runBlocking
+import kotlin.system.measureTimeMillis
+
+
+fun main() {
+
+    val time = runBlocking {
+        measureTimeMillis {
+            val one = doSomethingUsefulOne()
+            val two = doSomethingUsefulTwo()
+            println("The answer is ${one + two}")
+        }
+    }
+
+    println("Completed in $time ms")
+}
