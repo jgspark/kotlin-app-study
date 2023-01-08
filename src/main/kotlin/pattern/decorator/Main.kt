@@ -3,20 +3,16 @@ package pattern.decorator
 
 fun main() {
 
-    val inputString = "test,1\ntest1,2\ntest2,3"
+    val num = 10
 
+    var decorator = CalculationDecorator(DecoratorImpl(num))
 
-    val decorator =
-        PasserDecorator(
-            target = DataConvertImpl(inputString)
-        )
-
-
-    decorator.write(inputString)
-    println(">> input")
-    println(inputString)
-    println(">> encode")
-    println(decorator.read())
-
-
+    println("step1 ===")
+    println(decorator.action())
+    decorator = PlusDecorator(decorator, 10)
+    println("step2 ===")
+    println(decorator.action())
+    println("step3 ===")
+    decorator = SubtractDecorator(decorator, 20)
+    println(decorator.action())
 }
