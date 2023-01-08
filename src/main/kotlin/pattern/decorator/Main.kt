@@ -3,16 +3,20 @@ package pattern.decorator
 
 fun main() {
 
-    val num = 10
+    // 타겟
+    val target1 = CokePlusDecorator(
+        HamPlusDecorator(
+            target = CheesePlusDecorator(
+                target = CalculationDecorator(DecoratorImpl(3000))
+            )
+        )
+    )
 
-    var decorator = CalculationDecorator(DecoratorImpl(num))
+    println(target1.action())
 
-    println("step1 ===")
-    println(decorator.action())
-    decorator = PlusDecorator(decorator, 10)
-    println("step2 ===")
-    println(decorator.action())
-    println("step3 ===")
-    decorator = SubtractDecorator(decorator, 20)
-    println(decorator.action())
+    val target2 = CaffePlusDecorator(
+        target = CalculationDecorator(target = DecoratorImpl(3000))
+    )
+
+    println(target2.action())
 }
