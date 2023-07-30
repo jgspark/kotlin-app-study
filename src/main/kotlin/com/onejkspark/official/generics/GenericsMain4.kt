@@ -13,11 +13,11 @@ fun main(args: Array<String>) {
     val listInt2: MutableList<Int> = mutableListOf(1, 2, 3, 45)
 
     for (i in listInt) {
-        println(i.dec())
+        (i as Int).dec()
     }
 
     for (i in listInt2) {
-        println(i.dec())
+        i.dec()
     }
 }
 
