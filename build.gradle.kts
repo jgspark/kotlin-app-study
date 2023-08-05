@@ -1,31 +1,42 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.20"
-    application
+    kotlin("jvm") version "1.6.20" apply false
 }
 
-group = "org.example"
+group = "com.onejkspark"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
+allprojects {
+
+    repositories {
+        mavenCentral()
+    }
+
+    tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            freeCompilerArgs = listOf("-Xjsr305=strict")
+            jvmTarget = "11"
+        }
+    }
+
+    tasks.withType<Test> {
+        useJUnitPlatform()
+    }
 }
 
-dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-    testImplementation(kotlin("test"))
-    testImplementation(kotlin("reflect"))
-}
 
-tasks.test {
-    useJUnitPlatform()
-}
+subprojects {
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
-}
+    apply(plugin = "java")
+    apply(plugin = "kotlin")
 
-application {
-    mainClass.set("MainKt")
+    dependencies {
+        "implementation"("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+        "testImplementation"(kotlin("test"))
+        "testImplementation"(kotlin("reflect"))
+//
+//        implementation("org.jetbrains.kotlin:kotlin-reflect")
+//        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    }
 }
