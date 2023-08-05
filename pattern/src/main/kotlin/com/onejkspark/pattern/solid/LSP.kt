@@ -1,4 +1,4 @@
-package com.onejkspark.pattern.sold
+package com.onejkspark.pattern.solid
 
 class LSP {
 
