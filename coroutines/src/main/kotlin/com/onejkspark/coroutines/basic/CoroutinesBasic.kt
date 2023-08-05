@@ -6,10 +6,13 @@ import kotlinx.coroutines.runBlocking
 
 class CoroutinesBasic
 
+/**
+ *
+ */
 fun main() = runBlocking {
     launch {
         delay(1000L)
-        println("World!")
+        println("${Thread.currentThread().name} : World!")
     }
-    println("Hello")
+    println("${Thread.currentThread().name} : Hello")
 }
