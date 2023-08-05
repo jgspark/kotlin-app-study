@@ -4,5 +4,6 @@ include(
     "effectivekotlin",
     "kotlininaction",
     "jetbrain",
-    "pattern"
+    "pattern",
+    "coroutines"
 )
