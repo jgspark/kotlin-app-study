@@ -23,3 +23,13 @@ fun work(any: Any) {
 fun workForString(any: String) {
     println(any.plus(" my home"))
 }
+
+
+class ZooService(
+    private val mammalia: Mammalia
+) {
+
+    fun sound() {
+        mammalia.sound()
+    }
+}
