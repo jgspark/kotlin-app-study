@@ -21,8 +21,11 @@
 #       - name: Check Style
 #         run: ./gradlew ktlintCheck --parallel
       
-name: reviewdog
-on: [pull_request]
+name: ci
+on: 
+ push: 
+   branches: 
+     - main 
 
 jobs:
   ktlint:
