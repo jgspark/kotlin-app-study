@@ -2,11 +2,18 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.6.20" apply false
+    application
 }
 
-group = "com.onejkspark"
-version = "1.0-SNAPSHOT"
+allprojects {
 
+    group = "com.onejkspark"
+    version = "1.0-SNAPSHOT"
+
+    repositories {
+        mavenCentral()
+    }
+}
 
 subprojects {
 
@@ -15,10 +22,6 @@ subprojects {
 
     val implementation by configurations
     val testImplementation by configurations
-
-    repositories {
-        mavenCentral()
-    }
 
     tasks.withType<KotlinCompile> {
         kotlinOptions {
