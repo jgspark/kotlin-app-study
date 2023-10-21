@@ -1,7 +1,7 @@
 on:
     push:
         branches:
-            - 'issue/#1'
+            - '**/**'
 
 jobs:
     name: ktlin
