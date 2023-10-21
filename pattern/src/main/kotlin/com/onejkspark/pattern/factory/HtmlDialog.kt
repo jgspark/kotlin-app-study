@@ -5,7 +5,5 @@ import com.onejkspark.pattern.factory.button.HtmlButton
 
 class HtmlDialog : Dialog() {
 
-
     override fun createdButton(): Button = HtmlButton()
-
 }

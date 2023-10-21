@@ -1,6 +1,5 @@
 package com.onejkspark.effectivekotlin.item2
 
-
 val a = 1
 
 fun fizz(): Int {
@@ -13,33 +12,31 @@ val buzz = {
     a + c
 }
 
-
 class User constructor(val name: String)
 
 var list = listOf<User>()
 
 fun users() {
 
-    //#1
+    // #1
     var user: User
     for (i in list.indices) {
         user = list[i]
     }
 
-    //#2
+    // #2
     for (i in list.indices) {
         val user = list[i]
     }
 
-    //#3
+    // #3
     for ((i, user) in list.withIndex()) {
     }
-
 }
 
 fun users2() {
 
-    //#1
+    // #1
     val user: User
 
     val boolean: Boolean = true
@@ -52,7 +49,7 @@ fun users2() {
         user = User(name)
     }
 
-    //#2
+    // #2
     val user2 = if (boolean) {
         User(name)
     } else {
@@ -64,7 +61,7 @@ enum class Color {
     BLUE, YELLOW, RED
 }
 
-//#1
+// #1
 fun updatedWeather1(degrees: Int) {
 
     val description: String
@@ -82,7 +79,7 @@ fun updatedWeather1(degrees: Int) {
     }
 }
 
-//#2
+// #2
 fun updatedWeather2(degrees: Int) {
 
     val (description, color) = when {

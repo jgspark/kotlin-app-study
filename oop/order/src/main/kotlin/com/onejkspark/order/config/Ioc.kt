@@ -18,5 +18,6 @@ object App {
 }
 
 data class Ioc constructor(
-    val productService: ProductService, val orderPrintService: OrderPrintService
+    val productService: ProductService,
+    val orderPrintService: OrderPrintService
 )

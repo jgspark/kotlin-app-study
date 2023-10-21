@@ -1,8 +1,6 @@
 package com.onejkspark.jetbrain.generics
 
-//import com.onejkspark.effectivekotlin.item4.Animal
-import com.onejkspark.jetbrain.generics.item.Animal
-import com.onejkspark.jetbrain.generics.item.Cat
+// import com.onejkspark.effectivekotlin.item4.Animal
 
 class GenericsMain3
 
@@ -15,4 +13,3 @@ fun main(args: Array<String>) {
         println(i.toInt())
     }
 }
-

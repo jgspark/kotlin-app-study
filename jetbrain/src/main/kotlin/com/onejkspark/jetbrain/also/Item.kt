@@ -15,5 +15,4 @@ class Item {
     fun setName(name: String) {
         this.name = name
     }
-
 }

@@ -1,7 +1,7 @@
 package com.onejkspark.order
 
 import com.onejkspark.order.config.App
-import java.util.*
+import java.util.Scanner
 
 fun main(args: Array<String>) {
 
@@ -24,7 +24,6 @@ fun main(args: Array<String>) {
         println("갯수:")
 
         val count = sc.next()
-
     } else {
         sc.close()
     }

@@ -1,8 +1,5 @@
 package com.onejkspark.pattern.factory
 
-import com.onejkspark.pattern.factory.Dialog
-import com.onejkspark.pattern.factory.HtmlDialog
-import com.onejkspark.pattern.factory.WindowDialog
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
@@ -13,7 +10,6 @@ internal class DialogTest {
     companion object {
         private var dialog: Dialog? = null
     }
-
 
     // html data
     @Nested
@@ -28,7 +24,6 @@ internal class DialogTest {
         fun onClick() {
             dialog?.renderWindow()
         }
-
     }
 
     // window data
@@ -44,6 +39,5 @@ internal class DialogTest {
         fun onClick() {
             dialog?.renderWindow()
         }
-
     }
 }

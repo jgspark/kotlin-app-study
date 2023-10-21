@@ -3,7 +3,6 @@ package com.onejkspark.jetbrain.coroutines
 import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 
-
 fun main() {
 
     val time = runBlocking {

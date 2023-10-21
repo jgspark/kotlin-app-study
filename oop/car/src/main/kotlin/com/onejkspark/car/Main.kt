@@ -23,5 +23,4 @@ fun main(args: Array<String>) {
     val driver2 = Driver(sportsCar)
     driver2.startCar()
     driver2.stopCar()
-
 }

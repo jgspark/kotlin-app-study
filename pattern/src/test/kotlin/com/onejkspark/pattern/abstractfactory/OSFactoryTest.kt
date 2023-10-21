@@ -1,9 +1,6 @@
 package com.onejkspark.pattern.abstractfactory
 
-import com.onejkspark.pattern.abstractfactory.OS
-import com.onejkspark.pattern.abstractfactory.OSFactory
-import com.onejkspark.pattern.abstractfactory.OsType
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 internal class OSFactoryTest {

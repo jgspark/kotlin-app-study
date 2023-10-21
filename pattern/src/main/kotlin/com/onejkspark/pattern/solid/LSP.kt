@@ -16,7 +16,6 @@ class LSP {
             animal.sound()
         }
     }
-
 }
 
 fun main() {
@@ -46,7 +45,6 @@ class Dog : Mammalia() {
     override fun sound() {
         println("월")
     }
-
 }
 
 class Cat : Mammalia() {
@@ -59,7 +57,6 @@ class Cat : Mammalia() {
         println("야옹")
     }
 }
-
 
 class Fish : Pisces() {
 

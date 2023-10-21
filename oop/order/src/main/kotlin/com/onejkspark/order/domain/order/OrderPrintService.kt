@@ -23,5 +23,4 @@ class OrderPrintServiceImpl constructor(
             println("${it.num} ${it.name}            ${it.price}               ${it.count}")
         }
     }
-
 }

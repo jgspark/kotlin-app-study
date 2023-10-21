@@ -6,7 +6,6 @@ import kotlinx.coroutines.runBlocking
 
 class RefactorCoroutinesBasic
 
-
 fun main() = runBlocking { // this: CoroutineScope
     launch { callWord() }
     println("${Thread.currentThread().name} : Hello")

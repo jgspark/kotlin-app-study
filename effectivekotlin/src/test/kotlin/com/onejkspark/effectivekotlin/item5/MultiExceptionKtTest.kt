@@ -1,12 +1,5 @@
 package com.onejkspark.effectivekotlin.item5
 
-import com.onejkspark.effectivekotlin.item5.checkToAny
-import com.onejkspark.effectivekotlin.item5.checkToAnyByCustomException
-import com.onejkspark.effectivekotlin.item5.checkToInt
-import com.onejkspark.effectivekotlin.item5.checkToIntByCustomException
-import com.onejkspark.effectivekotlin.item5.checkToLazyMessage
-import com.onejkspark.effectivekotlin.item5.checkToVal
-import com.onejkspark.effectivekotlin.item5.checkToValByRuntimeException
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
 

@@ -1,10 +1,8 @@
 package com.onejkspark.effectivekotlin.item1
 
-import com.onejkspark.effectivekotlin.item1.ActionEvent
-import com.onejkspark.effectivekotlin.item1.User
-import com.onejkspark.effectivekotlin.item1.fullName
-import com.onejkspark.effectivekotlin.item1.fullName2
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import kotlin.concurrent.thread
 import kotlin.properties.Delegates
@@ -55,7 +53,6 @@ internal class ActionEventTest {
         list2 += 1
 
         assertEquals(1, list2.size)
-
     }
 
     @Test
@@ -72,7 +69,6 @@ internal class ActionEventTest {
         Thread.sleep(1000)
 
         assertNotEquals(1000, list.size)
-
     }
 
     @Test
@@ -88,5 +84,4 @@ internal class ActionEventTest {
 
         assertEquals(2, names.size)
     }
-
 }

@@ -1,6 +1,5 @@
 package com.onejkspark.ticketsales.domain
 
-
 /*
 관람객의 보관할 클래스
  */
@@ -44,5 +43,4 @@ class Bag(
             ticket.getFee()
         }
     }
-
 }

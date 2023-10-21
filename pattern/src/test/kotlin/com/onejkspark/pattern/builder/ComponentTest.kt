@@ -1,11 +1,9 @@
 package com.onejkspark.pattern.builder
 
-import com.onejkspark.pattern.builder.Component
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 internal class ComponentTest {
-
 
     @Test
     fun `빌더 패턴 테스트 케이스`() {
@@ -24,7 +22,6 @@ internal class ComponentTest {
         Assertions.assertEquals(param2Str, component.getParam2())
         Assertions.assertEquals(param3Str, component.getParam3())
     }
-
 
     @Test
     fun `빌더 패턴 일부 null`() {

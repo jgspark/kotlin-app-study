@@ -4,15 +4,11 @@ class JsonParsingException() : RuntimeException()
 
 sealed class Result<out T>
 
-class Success<out T> constructor(val result: T) : Result<T>() {
+class Success<out T> constructor(val result: T) : Result<T>()
 
-}
+class Failure(val throwable: Throwable) : Result<Nothing>()
 
-class Failure(val throwable: Throwable) : Result<Nothing>() {
-
-}
-
-data class Item constructor(private val name : String){
+data class Item constructor(private val name: String) {
     val realName = this.name
 }
 

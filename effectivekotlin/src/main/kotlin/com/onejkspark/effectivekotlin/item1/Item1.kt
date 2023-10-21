@@ -4,8 +4,7 @@ interface EventItem {
     val active: Boolean
 }
 
-class ActionEvent(override var active: Boolean) : EventItem {
-}
+class ActionEvent(override var active: Boolean) : EventItem
 
 val name: String? = "Marton"
 
@@ -19,7 +18,6 @@ val fullName: String?
 val fullName2: String? = name?.let {
     "$it $surname"
 }
-
 
 data class User constructor(
     val name: String,

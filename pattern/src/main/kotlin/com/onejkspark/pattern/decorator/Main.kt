@@ -1,6 +1,5 @@
 package com.onejkspark.pattern.decorator
 
-
 fun main() {
 
     // 타겟

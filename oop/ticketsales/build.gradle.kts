@@ -1,17 +1,17 @@
 plugins {
-  application apply true
+    application apply true
 }
 
 dependencies {
-  implementation("org.springframework:spring-core:5.3.22")
-  testImplementation(kotlin("test"))
-  testImplementation("org.assertj:assertj-core:3.21.0")
+    implementation("org.springframework:spring-core:5.3.22")
+    testImplementation(kotlin("test"))
+    testImplementation("org.assertj:assertj-core:3.21.0")
 }
 
 tasks.getByName("jar") {
-  enabled = true
+    enabled = true
 }
 
 application {
-  mainClass.set("MainKt")
+    mainClass.set("MainKt")
 }

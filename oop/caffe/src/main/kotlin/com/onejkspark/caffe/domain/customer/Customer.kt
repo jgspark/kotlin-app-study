@@ -3,10 +3,11 @@ package com.onejkspark.caffe.domain.customer
 import com.onejkspark.caffe.domain.menu.IMenu
 import com.onejkspark.caffe.domain.order.Order
 import java.math.BigDecimal
-import java.util.*
+import java.util.Random
 
 data class Customer constructor(
-    val name: String, var money: BigDecimal
+    val name: String,
+    var money: BigDecimal
 ) {
 
     /**

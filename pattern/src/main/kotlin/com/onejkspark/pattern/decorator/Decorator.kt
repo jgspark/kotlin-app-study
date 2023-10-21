@@ -1,6 +1,5 @@
 package com.onejkspark.pattern.decorator
 
-
 interface Decorator {
     fun action(): Int
 }
@@ -16,7 +15,6 @@ open class CalculationDecorator(
 ) : Decorator {
     override fun action(): Int = this.target.action()
 }
-
 
 class CheesePlusDecorator(
     target: Decorator

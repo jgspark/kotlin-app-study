@@ -1,6 +1,8 @@
 package com.onejkspark.kotlininaction.reflection
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class ReflectionMainTest {
@@ -9,13 +11,13 @@ class ReflectionMainTest {
     @Throws(Exception::class)
     fun `문자열_리플랙션`() {
 
-        //given
+        // given
 
         val stringClass = String::class
 
-        //when
+        // when
 
-        //then
+        // then
 
         assertEquals("kotlin.String", stringClass.qualifiedName)
         assertFalse(stringClass.isData)
@@ -24,5 +26,4 @@ class ReflectionMainTest {
         assertTrue(stringClass.isFinal)
         assertFalse(stringClass.isSealed)
     }
-
 }

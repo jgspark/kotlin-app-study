@@ -1,8 +1,6 @@
 package com.onejkspark.jetbrain.generics
 
-
 class GenericsMain4
-
 
 fun main(args: Array<String>) {
 
@@ -20,5 +18,3 @@ fun main(args: Array<String>) {
         i.dec()
     }
 }
-
-

@@ -1,6 +1,5 @@
 package com.onejkspark.effectivekotlin.item2
 
-
 // example1
 fun ex1() {
 
@@ -16,7 +15,6 @@ fun ex1() {
 
         numbers = numbers.filter { it % prime != 0 }
     }
-
 }
 
 fun ex2() = sequence {
@@ -29,6 +27,5 @@ fun ex2() = sequence {
         yield(prime)
 
         numbers = numbers.drop(1).filter { it % prime != 0 }
-
     }
 }

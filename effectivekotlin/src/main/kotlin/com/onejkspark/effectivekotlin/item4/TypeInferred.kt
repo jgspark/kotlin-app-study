@@ -1,11 +1,11 @@
 package com.onejkspark.effectivekotlin.item4
 
-//open class Animal
+// open class Animal
 //
-//class Zebra : Animal()
+// class Zebra : Animal()
 //
-//// state Mehotd
-//fun getAnimal() : Unit{
+// // state Mehotd
+// fun getAnimal() : Unit{
 //    var animal = Zebra()
 //    // animal = Animal()
-//}
+// }

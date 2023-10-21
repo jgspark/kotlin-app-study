@@ -20,9 +20,7 @@ class ProductServiceImpl : ProductService {
             .asSequence()
             .map { s ->
                 Product(s.split(","))
-
             }
             .toList()
     }
 }
-

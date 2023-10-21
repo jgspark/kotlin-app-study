@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.6.20" apply false
+    id("org.jlleitschuh.gradle.ktlint") version "10.2.1" apply true
     application
 }
 
@@ -19,6 +20,7 @@ subprojects {
 
     apply(plugin = "java")
     apply(plugin = "kotlin")
+    apply(plugin = "org.jlleitschuh.gradle.ktlint")
 
     val implementation by configurations
     val testImplementation by configurations

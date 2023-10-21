@@ -27,7 +27,6 @@ class SportsCar(
     private val topSpeed: Int
 ) : Car(engine, model, year) {
 
-
     override fun start() {
         println("starting $model sports car with $topSpeed topSpeed")
         engine.turnOn()
@@ -37,5 +36,4 @@ class SportsCar(
         println("stopping $model sports car with $topSpeed topSpeed")
         engine.turnOff()
     }
-
 }

@@ -1,11 +1,9 @@
 package com.onejkspark.pattern.proxy
 
-import com.onejkspark.pattern.proxy.Proxy
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 internal class ProxyTest {
-
 
     @Test
     fun `프록시 테스트`() {
@@ -16,5 +14,4 @@ internal class ProxyTest {
 
         assertEquals("서비스실행중", string)
     }
-
 }

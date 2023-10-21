@@ -2,8 +2,7 @@ package com.onejkspark.jetbrain.generics
 
 class GenericsMain
 
-
-//fun main() {
+// fun main() {
 //
 //    val ints: MutableList<Int> = ArrayList()
 //
@@ -11,4 +10,4 @@ class GenericsMain
 //    numbers.add(1)
 //    val s = numbers[0]
 //
-//}
+// }

@@ -31,5 +31,5 @@ fun main() {
 
     var maxNumber = max.max(a, b, c)
 
-    println("최대 값은?:${maxNumber}")
+    println("최대 값은?:$maxNumber")
 }

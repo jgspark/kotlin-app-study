@@ -13,7 +13,6 @@ class Median {
     } else {
         b
     }
-
 }
 
 fun main() {

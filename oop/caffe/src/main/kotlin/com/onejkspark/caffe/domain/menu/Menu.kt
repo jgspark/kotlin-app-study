@@ -17,7 +17,8 @@ data class Menu constructor(
 }
 
 data class Item(
-    val name: String, val amount: BigDecimal
+    val name: String,
+    val amount: BigDecimal
 )
 
 data class Caffe constructor(
