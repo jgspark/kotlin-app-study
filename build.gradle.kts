@@ -49,8 +49,8 @@ subprojects {
         // 로그라이브러리
         val loggerJvmVersion = "2.0.10"
         val slf4jVersion = "1.7.30"
-        implementation("io.github.microutils:kotlin-logging-jvm:${loggerJvmVersion}")
-        implementation("org.slf4j:slf4j-api:${slf4jVersion}")
-        implementation("org.slf4j:slf4j-simple:${slf4jVersion}")
+        implementation("io.github.microutils:kotlin-logging-jvm:$loggerJvmVersion")
+        implementation("org.slf4j:slf4j-api:$slf4jVersion")
+        implementation("org.slf4j:slf4j-simple:$slf4jVersion")
     }
 }

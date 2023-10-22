@@ -1,6 +1,5 @@
 package com.onejkspark.coroutines.basic1
 
-
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
@@ -19,7 +18,6 @@ fun main() = runBlocking {
     }
     log.info { "Done" }
 }
-
 
 private suspend fun nonBlocking() = coroutineScope {
     async {
