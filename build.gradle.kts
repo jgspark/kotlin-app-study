@@ -37,15 +37,20 @@ subprojects {
     }
 
     dependencies {
+
+        // 기본라이브러리
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
         implementation("org.jetbrains.kotlin:kotlin-reflect")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
         implementation(kotlin("reflect"))
+
         testImplementation(kotlin("test"))
 
-        // logger
-        implementation("io.github.microutils:kotlin-logging-jvm:2.0.10")
-        implementation("org.slf4j:slf4j-api:1.7.30")
-        implementation("org.slf4j:slf4j-simple:1.7.30")
+        // 로그라이브러리
+        val loggerJvmVersion = "2.0.10"
+        val slf4jVersion = "1.7.30"
+        implementation("io.github.microutils:kotlin-logging-jvm:${loggerJvmVersion}")
+        implementation("org.slf4j:slf4j-api:${slf4jVersion}")
+        implementation("org.slf4j:slf4j-simple:${slf4jVersion}")
     }
 }
