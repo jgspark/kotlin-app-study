@@ -52,5 +52,7 @@ subprojects {
         implementation("io.github.microutils:kotlin-logging-jvm:$loggerJvmVersion")
         implementation("org.slf4j:slf4j-api:$slf4jVersion")
         implementation("org.slf4j:slf4j-simple:$slf4jVersion")
+
+//        implementation ("io.github.microutils:kotlin-logging:3.0.5")
     }
 }
