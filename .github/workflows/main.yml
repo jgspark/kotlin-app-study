@@ -3,8 +3,6 @@ name: ktlint format and commit
 on:
   pull_request:
     types: [opened, synchronize]
-    branches:
-      - 'feature/**'
 
 jobs:
   ktlint:
