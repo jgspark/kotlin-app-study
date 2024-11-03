@@ -15,19 +15,14 @@ fun main() {
 
         println(">>> 3")
 
-
         yield(3)
-
-
     }
 
     val iterator = seq.iterator()
 
     iterator.next()
 
-
     iterator.next()
-
 
     iterator.next()
 }
