@@ -5,13 +5,13 @@ class Main1
 fun main() {
     val seq = sequence {
 
-        println(">>> 1")
+        println(">>> 1");
 
-        yield(1)
+        yield(1);
 
-        println(">>> 2")
+        println(">>> 2");
 
-        yield(2)
+        yield(2);
 
         println(">>> 3");
 
