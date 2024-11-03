@@ -24,6 +24,10 @@ fun main() {
     val iterator = seq.iterator()
 
     iterator.next()
+
+
     iterator.next()
+
+
     iterator.next()
 }
