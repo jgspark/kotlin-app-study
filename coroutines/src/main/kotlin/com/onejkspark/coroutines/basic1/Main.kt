@@ -14,5 +14,8 @@ fun main() = runBlocking {
         delay(1000L)
         log.info { "word" }
     }
+
+
+
     log.info { "hello" }
 }
