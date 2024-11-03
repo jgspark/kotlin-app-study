@@ -10,6 +10,9 @@ class BasicMain
 private val log = KotlinLogging.logger {}
 
 fun main() = runBlocking {
+
+
+
     launch {
         delay(1000L)
         log.info { "word" }
