@@ -13,9 +13,9 @@ fun main() {
 
         yield(2)
 
-        println(">>> 3")
+        println(">>> 3");
 
-        yield(3)
+        yield(3);
     }
 
     val iterator = seq.iterator()
