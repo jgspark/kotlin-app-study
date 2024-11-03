@@ -26,16 +26,11 @@ fun main() = runBlocking {
                 log.info { "job: I'm sleeping ${i++}" }
                 next += 500L
             }
-
         }
-
     }
 
     delay(1300)
     log.info { "main: I'm tired of waiting!" }
     job.cancelAndJoin()
     log.info { "main: Now I can quit." }
-
 }
-
-

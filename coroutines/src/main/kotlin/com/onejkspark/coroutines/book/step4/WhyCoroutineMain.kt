@@ -15,9 +15,9 @@ private suspend fun myFunction() {
     println("After")
 }
 
-//private fun myFunction2(
+// private fun myFunction2(
 //    continuation: Continuation<Unit>
-//): Any {
+// ): Any {
 //
 //    val continuation = continuation as? MyFunction2Continuation ?: MyFunction2Continuation(continuation)
 //
@@ -37,17 +37,17 @@ private suspend fun myFunction() {
 //    }
 //
 //    error("Impossible")
-//}
+// }
 
-//fun delay(i: Int, continuation: MyFunction2Continuation): Any {
+// fun delay(i: Int, continuation: MyFunction2Continuation): Any {
 //    TODO("Not yet implemented")
-//}
+// }
 //
-//val COROUTINE_SUSPEND = 1L
+// val COROUTINE_SUSPEND = 1L
 //
-//private class MyFunction2Continuation(
+// private class MyFunction2Continuation(
 //    val continuation: Continuation<Unit>,
-//) : Continuation<Unit> {
+// ) : Continuation<Unit> {
 //
 //    override val context: CoroutineContext
 //        get() = this.continuation.context
@@ -66,4 +66,4 @@ private suspend fun myFunction() {
 //        }
 //        continuation.resumeWith(res)
 //    }
-//}
+// }

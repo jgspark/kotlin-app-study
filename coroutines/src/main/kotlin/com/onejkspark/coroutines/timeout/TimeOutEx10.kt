@@ -10,7 +10,6 @@ class TimeOutEx10
 
 private val log = KotlinLogging.logger { }
 
-
 private var acquired = 0
 
 private class Resource2 {

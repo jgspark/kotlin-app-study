@@ -12,7 +12,6 @@ class TimeOutEx6
 
 private val log = KotlinLogging.logger { }
 
-
 fun main() = runBlocking {
 
     val job = launch {
@@ -23,7 +22,6 @@ fun main() = runBlocking {
                 log.info { "job: i'm sleeping $i ..." }
                 delay(500L)
             }
-
         } finally {
             withContext(NonCancellable) {
                 log.info { "job: i'm running finally" }
@@ -31,12 +29,10 @@ fun main() = runBlocking {
                 log.info { "job: and i've just delayed for 1 sec because i'm non-cancellable" }
             }
         }
-
     }
 
     delay(1300)
     log.info { "main: i'm tired of waiting!" }
     job.cancelAndJoin()
     log.info { "main: now i can quit." }
-
 }

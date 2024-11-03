@@ -5,7 +5,6 @@ import kotlinx.coroutines.runBlocking
 
 class WhyCoroutineMain3
 
-
 fun main() {
     runBlocking {
         a()

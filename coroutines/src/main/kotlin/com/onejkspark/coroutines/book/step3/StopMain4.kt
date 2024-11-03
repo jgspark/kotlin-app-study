@@ -7,7 +7,6 @@ import kotlin.coroutines.suspendCoroutine
 
 class StopMain4
 
-
 suspend fun main() {
     println("B")
     delay(1000)

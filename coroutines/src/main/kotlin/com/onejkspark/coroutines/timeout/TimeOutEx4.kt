@@ -12,7 +12,6 @@ class TimeOutEx4
 
 private val log = KotlinLogging.logger { }
 
-
 fun main() = runBlocking {
 
     val start = System.currentTimeMillis()
@@ -28,12 +27,10 @@ fun main() = runBlocking {
                 next += 500
             }
         }
-
     }
 
     delay(1300)
     log.info { "main: i'm tired of waiting!" }
     job.cancelAndJoin()
     log.info { "main: now i can quit." }
-
 }

@@ -26,5 +26,3 @@ fun main() = runBlocking {
     job.join()
     log.info { "main: No I can quit." }
 }
-
-

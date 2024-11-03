@@ -11,7 +11,6 @@ class TimeOutEx3
 
 private val log = KotlinLogging.logger { }
 
-
 fun main() = runBlocking {
 
     val job = launch(Dispatchers.Default) {
@@ -22,7 +21,6 @@ fun main() = runBlocking {
             } catch (e: Exception) {
                 log.info { e }
             }
-
         }
     }
 
@@ -30,5 +28,4 @@ fun main() = runBlocking {
     log.info { "main: i'm tired of waiting!" }
     job.cancelAndJoin()
     log.info { "main: now i can quit." }
-
 }

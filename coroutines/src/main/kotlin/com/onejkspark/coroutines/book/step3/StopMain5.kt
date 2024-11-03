@@ -5,7 +5,6 @@ import kotlin.coroutines.suspendCoroutine
 
 class StopMain5
 
-
 suspend fun main() {
     println("B")
     val user = requestUser()

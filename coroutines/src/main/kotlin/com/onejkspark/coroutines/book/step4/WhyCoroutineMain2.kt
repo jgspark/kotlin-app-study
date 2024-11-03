@@ -34,4 +34,3 @@ fun getUserWithContent(i: Int) {
 fun getUser(i: Int) {
     TODO("Not yet implemented")
 }
-

@@ -2,7 +2,6 @@ package com.onejkspark.coroutines.book.sequence
 
 class Main1
 
-
 fun main() {
     val seq = sequence {
         println(">>> 1")
