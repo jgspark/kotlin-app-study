@@ -15,7 +15,5 @@ fun main() = runBlocking {
         log.info { "word" }
     }
 
-
-
     log.info { "hello" }
 }
