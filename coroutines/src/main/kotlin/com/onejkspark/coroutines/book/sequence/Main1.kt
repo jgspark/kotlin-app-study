@@ -7,7 +7,9 @@ fun main() {
         println(">>> 1")
         yield(1)
         println(">>> 2")
+
         yield(2)
+
         println(">>> 3")
         yield(3)
     }
