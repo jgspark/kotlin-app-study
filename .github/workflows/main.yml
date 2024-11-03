@@ -12,6 +12,8 @@ jobs:
       # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history to handle conflicts
 
       # Cache Gradle dependencies
       - name: Cache Gradle
@@ -49,8 +51,11 @@ jobs:
           if [[ `git status --porcelain` ]]; then
             git add .
             git commit -m "Apply ktlint format"
+            # Pull the latest changes from the remote branch to avoid conflicts
+            git pull --rebase origin ${{ github.head_ref }}
             # Push the changes back to the branch that triggered the PR
             git push origin HEAD:${{ github.head_ref }}
           else
             echo "No formatting changes"
           fi
+``
