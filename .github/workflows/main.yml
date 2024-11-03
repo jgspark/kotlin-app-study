@@ -9,25 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # # Checkout the repository
-      # - name: Checkout repository
-      #   uses: actions/checkout@v3
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # # Set up Java (ktlint requires Java)
-      # - name: Set up JDK 11
-      #   uses: actions/setup-java@v3
-      #   with:
-      #     java-version: '11'
+      # Grant execution permission to gradlew
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
 
-      # # Install ktlint
-      # - name: Install ktlint
-      #   run: curl -sSLO https://github.com/pinterest/ktlint/releases/download/0.48.0/ktlint && chmod a+x ktlint
-
-      # # Run ktlint format
-      # - name: Run ktlint
-      #   run: ./ktlint -F "**/*.kt"
-
-      - name: ktlint 
+      # Run ktlint format using Gradle
+      - name: Run ktlint
         run: ./gradlew ktlintFormat --parallel
 
       # Commit changes if any formatting changes were made
